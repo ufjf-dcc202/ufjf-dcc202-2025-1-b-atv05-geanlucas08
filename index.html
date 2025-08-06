@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>DCC202 - Atividade 05: Daniel Thielmann</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <h1>Jogo das peças</h1>
+
+    <p>
+      <strong>Desafio:</strong> Inverter a posição das peças brancas e pretas
+    </p>
+    <p>
+      <strong>Instrução:</strong> Deslizar para vizinho vazio ou pular uma peça
+      para vazio
+    </p>
+
+    <div class="game-board" id="gameBoard">
+      <div class="position" data-pos="0"></div>
+      <div class="position" data-pos="1"></div>
+      <div class="position" data-pos="2"></div>
+      <div class="position" data-pos="3"></div>
+      <div class="position" data-pos="4"></div>
+      <div class="position" data-pos="5"></div>
+      <div class="position" data-pos="6"></div>
+    </div>
+
+    <div class="controls">
+      <button onclick="reiniciarJogo()">Reiniciar</button>
+      <span>Movimentos: <span id="moves">0</span></span>
+    </div>
+
+    <div id="message"></div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
